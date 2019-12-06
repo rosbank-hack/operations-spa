@@ -1,3 +1,3 @@
-const backendUrl = 'qiwi.com';
-
-export default backendUrl;
+export default {
+  backendUrl: 'qiwi.com',
+};
