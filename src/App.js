@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from 'styled-components';
+import { Provider as StoreProvider } from 'react-redux';
+import { createBrowserHistory } from 'history';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import configureStore from './store';
+import Router from './Router';
+import { GlobalStyles, theme } from './theme';
+
+const history = createBrowserHistory();
+const store = configureStore(history);
+
+const App = () => (
+  <StoreProvider store={store}>
+    <ThemeProvider theme={theme}>
+      <>
+        <GlobalStyles />
+        <Router history={history} />
+      </>
+    </ThemeProvider>
+  </StoreProvider>
+);
 
 export default App;
