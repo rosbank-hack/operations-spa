@@ -1,4 +1,5 @@
 import React, { memo } from 'react';
+import { useHistory } from 'react-router-dom';
 
 import BurgerKingLogo from 'assets/icons/Burger_King_Logo.svg';
 
@@ -6,9 +7,17 @@ import useStyles from '../styles';
 
 const CommonCard = ({ typeError, reason }) => {
   const classes = useStyles();
+  const history = useHistory();
 
   return (
-    <div className={classes.root}>
+    <div
+      className={classes.root}
+      alt="angle"
+      role="button"
+      tabIndex="0"
+      onKeyPress={() => history.push('/details/1')}
+      onClick={() => history.push('/details/1')}
+    >
       <div className={classes.card__image}>
         <img src={BurgerKingLogo} alt="icon" />
       </div>

@@ -1,4 +1,5 @@
 import React, { memo } from 'react';
+import { useHistory } from 'react-router-dom';
 
 import TransactionDarkIcon from 'assets/icons/transaction-dark.svg';
 
@@ -6,9 +7,16 @@ import useStyles from '../styles';
 
 const BankPaymentCard = ({ price, title }) => {
   const classes = useStyles();
+  const history = useHistory();
 
   return (
-    <div className={classes.root}>
+    <div
+      className={classes.root}
+      role="button"
+      tabIndex="0"
+      onKeyPress={() => history.push('/details/1')}
+      onClick={() => history.push('/details/1')}
+    >
       <div className={classes.card__image}>
         <img src={TransactionDarkIcon} alt="icon" />
       </div>

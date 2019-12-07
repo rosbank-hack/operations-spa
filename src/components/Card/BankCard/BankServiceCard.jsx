@@ -1,4 +1,5 @@
 import React, { memo } from 'react';
+import { useHistory } from 'react-router-dom';
 
 import TransactionDarkIcon from 'assets/icons/transaction-dark.svg';
 import CancelIcon from 'assets/icons/cancel.svg';
@@ -15,6 +16,7 @@ const cardStatuses = {
 
 const BankServiceCard = ({ title, substatus }) => {
   const classes = useStyles();
+  const history = useHistory();
 
   const getImage = () => {
     switch (substatus) {
@@ -30,7 +32,13 @@ const BankServiceCard = ({ title, substatus }) => {
   };
 
   return (
-    <div className={classes.root__service}>
+    <div
+      className={classes.root__service}
+      role="button"
+      tabIndex="0"
+      onKeyPress={() => history.push('/details/1')}
+      onClick={() => history.push('/details/1')}
+    >
       <div className={classes.card__main_service}>
         <div className={classes.card__image}>
           <img src={TransactionDarkIcon} alt="icon" />
@@ -39,9 +47,9 @@ const BankServiceCard = ({ title, substatus }) => {
           <span className={classes.card__title_main}>{title}</span>
           <span className={classes.card__title_category}>Банковские операции</span>
         </div>
-        <div className={classes.card__image}>{getImage()}</div>
       </div>
       <div className={classes.card__status}>
+        <div className={classes.card__image_status}>{getImage()}</div>
         <span className={classes[`card__status_${substatus.toLowerCase()}`]}>{cardStatuses[substatus]}</span>
       </div>
     </div>

@@ -7,6 +7,9 @@ export default makeStyles({
     width: '100%',
     backgroundColor: '#414141',
   },
+  nav__menu: {
+    height: '50px',
+  },
   actionLabel: {
     marginTop: '5px',
     color: '#FFFFFF',

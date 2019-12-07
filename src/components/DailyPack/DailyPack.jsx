@@ -1,4 +1,5 @@
 import React from 'react';
+import Divider from '@material-ui/core/Divider';
 
 import { CommonCard, TransferCard, BankCard, AdCard } from 'components/Card';
 
@@ -11,13 +12,33 @@ const DailyPack = ({ pack: { title, cards } }) => {
     return cards.map((item, index) => {
       switch (item.type) {
         case 'COMMON':
-          return <CommonCard key={index} {...item} />;
+          return (
+            <React.Fragment key={index}>
+              <CommonCard {...item} />
+              <Divider style={{ marginLeft: '50px', marginTop: '10px' }} variant="inset" />
+            </React.Fragment>
+          );
         case 'TRANSFER':
-          return <TransferCard key={index} {...item} />;
+          return (
+            <React.Fragment key={index}>
+              <TransferCard {...item} />
+              <Divider style={{ marginLeft: '50px', marginTop: '10px' }} variant="inset" />
+            </React.Fragment>
+          );
         case 'SERVICE':
-          return <BankCard key={index} {...item} />;
+          return (
+            <React.Fragment key={index}>
+              <BankCard {...item} />
+              <Divider style={{ marginLeft: '50px', marginTop: '10px' }} variant="inset" />
+            </React.Fragment>
+          );
         case 'AD':
-          return <AdCard key={index} {...item} />;
+          return (
+            <React.Fragment key={index}>
+              <AdCard {...item} />
+              <Divider style={{ marginLeft: '50px', marginTop: '10px' }} variant="inset" />
+            </React.Fragment>
+          );
         default:
           return null;
       }

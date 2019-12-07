@@ -1,4 +1,5 @@
 import React, { memo } from 'react';
+import { useHistory } from 'react-router-dom';
 
 import BurgerKingLogo from 'assets/icons/Burger_King_Logo.svg';
 
@@ -6,9 +7,16 @@ import useStyles from '../styles';
 
 const AdCard = ({ price, cashback, company, category, addText, link }) => {
   const classes = useStyles();
+  const history = useHistory();
 
   return (
-    <div className={classes.root_ad}>
+    <div
+      className={classes.root_ad}
+      role="button"
+      tabIndex="0"
+      onKeyPress={() => history.push('/details/1')}
+      onClick={() => history.push('/details/1')}
+    >
       <div className={classes.card__main_service}>
         <div className={classes.card__image}>
           <img src={BurgerKingLogo} alt="icon" />
