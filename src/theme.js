@@ -1,32 +1,25 @@
-import { createGlobalStyle } from 'styled-components';
-import boldFont from './assets/fonts/MullerBold.woff2';
-import regularFont from './assets/fonts/MullerRegular.woff2';
-import mediumFont from './assets/fonts/MullerMedium.woff2';
+import { createMuiTheme } from '@material-ui/core/styles';
+import { blue, grey } from '@material-ui/core/colors';
 
-export const GlobalStyles = createGlobalStyle`
-  @font-face {
-    font-family: 'MyMuller';
-    src: local('MyMullerBold'), local('MyMullerRegular'), local('MyMullerMedium'),
-        url(${boldFont}) format('woff2'),
-        url(${regularFont}) format('woff2'),
-        url(${mediumFont}) format('woff2');
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    background-color: rgb(235, 236, 239);
-    font-family: MyMullerBold, MyMullerMedium, MyMullerRegular, Arial, Helvetica, sans-serif;
-  }
-`;
-
-const colors = {
-  black: '#000',
-};
-
-export const theme = {
-  text: colors.black,
-};
+export default createMuiTheme({
+  spacing: 4,
+  shadows: [],
+  palette: {
+    primary: {
+      dark: blue[900],
+      main: blue[800],
+      light: blue[600],
+    },
+    secondary: {
+      dark: grey[400],
+      main: grey[300],
+      light: grey[200],
+      contrastText: grey[900],
+    },
+    text: {
+      primary: grey[900],
+      secondary: grey[700],
+      disabled: grey[400],
+    },
+  },
+});

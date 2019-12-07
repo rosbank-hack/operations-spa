@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="6.373" viewBox="0 0 27 6.373">
+  <g id="ellipsis" transform="translate(0 -153)">
+    <g id="keyboard-control" transform="translate(0 153)">
+      <path id="Path_33" data-name="Path 33" d="M3.375,153a3.192,3.192,0,1,0,0,6.373,3.192,3.192,0,1,0,0-6.373Zm20.25,0A3.192,3.192,0,1,0,27,156.186,3.294,3.294,0,0,0,23.625,153ZM13.5,153a3.192,3.192,0,1,0,0,6.373,3.192,3.192,0,1,0,0-6.373Z" transform="translate(0 -153)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
