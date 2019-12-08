@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 
 import RjdLogo from 'assets/icons/rjd.svg';
 import OkeyLogo from 'assets/icons/okey.svg';
+import { addDigitDivider } from 'utils/number-utils';
 
 import useStyles from '../styles';
 
@@ -27,8 +28,8 @@ const AdCard = ({ price, cashback, company, category, addText, link }) => {
           <span className={classes.card__title_category}>{category}</span>
         </div>
         <div className={classes.card__payment}>
-          <span className={classes.card__payment_main}>{`- ${price} р.`}</span>
-          <span className={classes.card__payment_cashback}>{`+ ${cashback} р. кэшбек`}</span>
+          <span className={classes.card__payment_main}>{`- ${addDigitDivider(price)} р.`}</span>
+          <span className={classes.card__payment_cashback}>{`+ ${addDigitDivider(cashback)} р. кэшбек`}</span>
         </div>
       </div>
       <div className={classes.ad__main}>

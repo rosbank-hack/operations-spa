@@ -1,6 +1,7 @@
 import React, { memo } from 'react';
 
 import BurgerKingLogo from 'assets/icons/Burger_King_Logo.svg';
+import { addDigitDivider } from 'utils/number-utils';
 
 import useStyles from './styles';
 
@@ -16,7 +17,7 @@ const Category = ({ title, amount }) => {
         <span className={classes.category__title_main}>{title}</span>
       </div>
       <div className={classes.category__amount}>
-        <span className={classes.category__amount_main}>{`${amount} р.`}</span>
+        <span className={classes.category__amount_main}>{`${addDigitDivider(amount)} р.`}</span>
       </div>
     </div>
   );

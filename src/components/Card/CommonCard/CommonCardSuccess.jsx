@@ -1,6 +1,7 @@
 import React, { memo } from 'react';
 import { useHistory } from 'react-router-dom';
 
+import { addDigitDivider } from 'utils/number-utils';
 import BurgerKingLogo from 'assets/icons/Burger_King_Logo.svg';
 
 import useStyles from '../styles';
@@ -25,8 +26,8 @@ const CommonCardSuccess = ({ price, cashback }) => {
         <span className={classes.card__title_category}>Рестораны</span>
       </div>
       <div className={classes.card__payment}>
-        <span className={classes.card__payment_main}>{`- ${price} р.`}</span>
-        <span className={classes.card__payment_cashback}>{`+ ${cashback} р. кэшбек`}</span>
+        <span className={classes.card__payment_main}>{`- ${addDigitDivider(price)} р.`}</span>
+        <span className={classes.card__payment_cashback}>{`+ ${addDigitDivider(cashback)} р. кэшбек`}</span>
       </div>
     </div>
   );

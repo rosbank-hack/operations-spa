@@ -4,6 +4,7 @@ export default makeStyles(theme => ({
   root: {
     width: '100%',
     flexGrow: 1,
+    height: '220px',
   },
   header: {
     display: 'flex',

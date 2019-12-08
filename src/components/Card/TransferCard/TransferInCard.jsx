@@ -1,6 +1,7 @@
 import React, { memo } from 'react';
 import { useHistory } from 'react-router-dom';
 
+import { addDigitDivider } from 'utils/number-utils';
 import TransactionIcon from 'assets/icons/transaction.svg';
 
 import useStyles from '../styles';
@@ -25,7 +26,7 @@ const TransferInCard = ({ price }) => {
         <span className={classes.card__title_category}>Входящий перевод</span>
       </div>
       <div className={classes.card__payment}>
-        <span className={classes.card__payment_in}>{`+ ${price} р.`}</span>
+        <span className={classes.card__payment_in}>{`+ ${addDigitDivider(price)} р.`}</span>
       </div>
     </div>
   );
