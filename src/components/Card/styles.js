@@ -129,7 +129,7 @@ export default makeStyles({
     marginLeft: '5px',
   },
   ad__main: {
-    marginLeft: '51px',
+    marginLeft: '46px',
     marginTop: '22px',
     fontSize: '16px',
     fontWeight: '400',

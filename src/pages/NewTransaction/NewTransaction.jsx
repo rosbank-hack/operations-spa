@@ -21,6 +21,7 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import Typography from '@material-ui/core/Typography';
 import theme from '../../theme';
 import api from '../../utils/api';
+
 import useStyles from './styles';
 
 const NewTransaction = () => {
@@ -112,7 +113,7 @@ const NewTransaction = () => {
       className={classes.container}
       spacing={theme.spacing(1)}
     >
-      <Typography variant="h3" gutterBottom style={{ marginTop: '10px' }}>
+      <Typography variant="h5" gutterBottom style={{ marginTop: '10px' }}>
         Добавление транзакции
       </Typography>
 
@@ -201,7 +202,11 @@ const NewTransaction = () => {
         </RadioGroup>
       </FormControl>
 
-      <Button variant="contained" color="secondary" style={{ marginBottom: '10px' }} onClick={handleOnClick}>
+      <Button
+        variant="outlined"
+        style={{ color: 'red', borderColor: 'red', marginBottom: '10px' }}
+        onClick={handleOnClick}
+      >
         Создать
       </Button>
 
