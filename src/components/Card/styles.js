@@ -75,7 +75,7 @@ export default makeStyles({
   card__error_description: {
     marginLeft: '16px',
     marginTop: '12px',
-    width: '100%',
+    width: '99%',
   },
   card__error_type: {
     fontSize: '14px',
@@ -87,7 +87,7 @@ export default makeStyles({
     justifyContent: 'space-between',
     fontSize: '14px',
     color: '#959595',
-    paddingRight: '12px',
+    paddingRight: '10px',
   },
   card__main_service: {
     display: 'flex',

@@ -1,7 +1,8 @@
 import React, { memo } from 'react';
 import { useHistory } from 'react-router-dom';
 
-import BurgerKingLogo from 'assets/icons/Burger_King_Logo.svg';
+import RjdLogo from 'assets/icons/rjd.svg';
+import OkeyLogo from 'assets/icons/okey.svg';
 
 import useStyles from '../styles';
 
@@ -19,7 +20,7 @@ const AdCard = ({ price, cashback, company, category, addText, link }) => {
     >
       <div className={classes.card__main_service}>
         <div className={classes.card__image}>
-          <img src={BurgerKingLogo} alt="icon" />
+          {company === 'РЖД' ? <img src={RjdLogo} alt="icon" /> : <img src={OkeyLogo} alt="icon" />}
         </div>
         <div className={classes.card__title}>
           <span className={classes.card__title_main}>{company}</span>

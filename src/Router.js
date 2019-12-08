@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
 
 import { History } from 'pages/History';
+import { Categories } from 'pages/Categories';
 import { NotFound } from 'pages/NotFound';
 import { MainLayout } from 'layouts/MainLayout';
 import { Details } from 'pages/Details';
@@ -15,6 +16,14 @@ const RootRouter = ({ history }) => (
         component={() => (
           <MainLayout>
             <History />
+          </MainLayout>
+        )}
+      />
+      <Route
+        path="/categories"
+        component={() => (
+          <MainLayout>
+            <Categories />
           </MainLayout>
         )}
       />
