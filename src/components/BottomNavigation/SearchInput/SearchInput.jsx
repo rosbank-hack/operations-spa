@@ -13,7 +13,7 @@ const SearchInput = ({ isDisabled, width }) => {
     <Paper className={classes.root} style={{ width }}>
       <InputBase
         className={classes.input}
-        placeholder="Поиск по категориям"
+        placeholder="Поиск"
         inputProps={{ 'aria-label': 'search google maps' }}
         disabled={isDisabled}
       />

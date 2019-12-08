@@ -1,21 +1,27 @@
 import makeStyles from '@material-ui/core/styles/makeStyles';
 
-export default makeStyles(theme => ({
+export default makeStyles({
   root: {
+    borderWidth: '2px',
+    borderColor: '#E70E29',
+    fontSize: '10px',
+    borderStyle: 'solid',
     padding: '2px 4px',
+    marginLeft: '5%',
     display: 'flex',
     alignItems: 'center',
-    height: '40px',
+    height: '35px',
+    borderRadius: '32px',
   },
   input: {
-    marginLeft: theme.spacing(1),
+    marginLeft: '10%',
     flex: 1,
   },
   iconButton: {
     padding: 10,
   },
   divider: {
-    height: 28,
+    height: 20,
     margin: 4,
   },
-}));
+});
