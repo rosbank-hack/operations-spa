@@ -3,6 +3,7 @@ import makeStyles from '@material-ui/core/styles/makeStyles';
 export default makeStyles({
   root: {
     display: 'flex',
+    paddingBottom: '70px',
     minHeight: '92vh',
     flexDirection: 'column',
     justifyContent: 'space-between',
@@ -40,6 +41,7 @@ export default makeStyles({
   details__controls: {
     display: 'flex',
     flexDirection: 'column',
+    marginTop: '25px',
     paddingLeft: '65px',
     paddingRight: '30px',
     '& > button': {

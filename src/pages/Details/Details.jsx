@@ -4,7 +4,7 @@ import { useParams, useHistory } from 'react-router-dom';
 import { CommonCard, TransferCard, BankCard, AdCard } from 'components/Card';
 import CancelIcon from 'assets/icons/cancel.svg';
 import SuccessIcon from 'assets/icons/tick-inside-circle.svg';
-import ProcessIcon from 'assets/icons/passage-of-time-process.svg';
+import ProcessIcon from 'assets/icons/passage-of-time.svg';
 import LeftAngleIcon from 'assets/icons/left-arrow-angle.svg';
 
 import api from 'utils/api';
@@ -39,12 +39,12 @@ const Details = () => {
   };
 
   const getImage = () => {
-    switch (card.status) {
+    switch (card.extendedStatus) {
       case 'SUCCESS':
         return <img className={classes.details__header_big} src={SuccessIcon} alt="icon" />;
-      case 'ERROR':
+      case 'OUT_DECLINE':
         return <img className={classes.details__header_big} src={CancelIcon} alt="icon" />;
-      case 'PROCESS':
+      case 'OUT_PROCESSING':
         return <img className={classes.details__header_big} src={ProcessIcon} alt="icon" />;
       default:
         return null;
