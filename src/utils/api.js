@@ -28,9 +28,9 @@ export const makeRequest = ({ url, type = 'post', baseURL = config.backendUrl, i
   });
 
 const api = {
-  exampleRequest: makeRequest({ url: '/example-request', type: 'get' }),
   search: makeRequest({ url: '/operations/search' }),
   getItem: makeRequest({ url: '/operations/', type: 'get' }),
+  addTransaction: makeRequest({ url: '/transactions', type: 'post', baseURL: config.transactionServiceUrl }),
 };
 
 export default api;

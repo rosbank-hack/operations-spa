@@ -8,6 +8,7 @@ import { NotFound } from 'pages/NotFound';
 import { MainLayout } from 'layouts/MainLayout';
 import { DetailsLayout } from 'layouts/DetailsLayout';
 import { Details } from 'pages/Details';
+import { NewTransaction } from 'pages/NewTransaction';
 
 const RootRouter = ({ history }) => (
   <ConnectedRouter history={history}>
@@ -25,6 +26,22 @@ const RootRouter = ({ history }) => (
         component={() => (
           <MainLayout>
             <Categories />
+          </MainLayout>
+        )}
+      />
+      <Route
+        path="/transaction"
+        component={() => (
+          <MainLayout>
+            <NewTransaction />
+          </MainLayout>
+        )}
+      />
+      <Route
+        path="/transaction"
+        component={() => (
+          <MainLayout>
+            <NewTransaction />
           </MainLayout>
         )}
       />
