@@ -44,7 +44,7 @@ const BottomNavigation = () => {
           }}
           onClick={toggleDrawer('bottom', true)}
         >
-          <SearchInput isDisabled width={240} />
+          <SearchInput isDisabled width={240} value="Поиск" />
           <Button
             href={window.location.pathname === '/history' ? '/categories' : '/history'}
             variant="contained"

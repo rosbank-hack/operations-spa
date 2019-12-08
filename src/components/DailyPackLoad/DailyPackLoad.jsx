@@ -3,6 +3,7 @@ import Divider from '@material-ui/core/Divider';
 import InfiniteScroll from 'react-infinite-scroller';
 
 import { CommonCard, TransferCard, BankCard, AdCard } from 'components/Card';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 import useStyles from './styles';
 
@@ -56,8 +57,8 @@ const DailyPack = ({ pack: { title, cards }, hasNextPage, loadNextPage }) => {
         useWindow
         threshold={100}
         loader={
-          <div className="loader" key={0}>
-            Loading ...
+          <div className={classes.spinner}>
+            <CircularProgress />
           </div>
         }
       >

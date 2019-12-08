@@ -14,7 +14,6 @@ const SearchInput = ({ isDisabled, width, onChange, value, isAutofocus }) => {
       <InputBase
         className={classes.input}
         placeholder="Поиск"
-        inputProps={{ 'aria-label': 'search google maps' }}
         disabled={isDisabled}
         onChange={onChange}
         value={value}
