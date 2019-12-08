@@ -8,6 +8,7 @@ import NotepadIcon from 'assets/icons/notepad.svg';
 import RubleIcon from 'assets/icons/ruble.svg';
 import ChatIcon from 'assets/icons/chat.svg';
 import EllipsisIcon from 'assets/icons/ellipsis.svg';
+import { useHistory } from 'react-router-dom';
 import { BottomDrawer } from '../BottomDrawer';
 import { SearchInput } from './SearchInput';
 
@@ -18,6 +19,7 @@ const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
 const BottomNavigation = () => {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
+  const history = useHistory();
 
   const [state, setState] = React.useState({
     bottom: false,
@@ -58,6 +60,7 @@ const BottomNavigation = () => {
           value={value}
           onChange={(event, newValue) => {
             setValue(newValue);
+            history.push(newValue);
           }}
           showLabels
           classes={{
@@ -70,6 +73,8 @@ const BottomNavigation = () => {
               root: classes.actionRoot,
             }}
             label="Главная"
+            value="/transaction"
+            onClick={() => history.push('/transaction')}
             icon={<img src={CreditCardIcon} alt="credit card" />}
           />
           <BottomNavigationAction
@@ -78,6 +83,8 @@ const BottomNavigation = () => {
               root: classes.actionRoot,
             }}
             label="История"
+            value="/history"
+            onClick={() => history.push('/history')}
             icon={<img src={NotepadIcon} alt="events" />}
           />
           <BottomNavigationAction
@@ -86,6 +93,8 @@ const BottomNavigation = () => {
               root: classes.actionRoot,
             }}
             label="Оплатить"
+            value="/transaction"
+            onClick={() => history.push('/transaction')}
             icon={<img src={RubleIcon} alt="payment" />}
           />
           <BottomNavigationAction
@@ -94,6 +103,8 @@ const BottomNavigation = () => {
               root: classes.actionRoot,
             }}
             label="Чат"
+            onClick={() => history.push('/transaction')}
+            value="/transaction"
             icon={<img src={ChatIcon} alt="chat" />}
           />
           <BottomNavigationAction
@@ -102,6 +113,8 @@ const BottomNavigation = () => {
               root: classes.actionRoot,
             }}
             label="Ещё"
+            onClick={() => history.push('/transaction')}
+            value="/transaction"
             icon={<img src={EllipsisIcon} alt="else" />}
           />
         </MuiBottomNavigation>

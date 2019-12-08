@@ -113,7 +113,7 @@ const NewTransaction = () => {
       className={classes.container}
       spacing={theme.spacing(1)}
     >
-      <Typography variant="h5" gutterBottom style={{ marginTop: '10px' }}>
+      <Typography variant="h5" gutterBottom style={{ marginTop: '30px' }}>
         Добавление транзакции
       </Typography>
 
