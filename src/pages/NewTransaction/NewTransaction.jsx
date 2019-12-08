@@ -19,6 +19,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import Typography from '@material-ui/core/Typography';
+import { useHistory } from 'react-router';
 import theme from '../../theme';
 import api from '../../utils/api';
 
@@ -26,6 +27,7 @@ import useStyles from './styles';
 
 const NewTransaction = () => {
   const classes = useStyles();
+  const history = useHistory();
 
   const sourceMap = {
     '1c65b569-d488-426d-ac67-eada0d549f7f': 'Карта (4270 37** **** 4563)',
@@ -37,7 +39,7 @@ const NewTransaction = () => {
     setSelectedProviderUid(value);
   };
 
-  const [selectedName, setSelectedName] = useState('');
+  const [selectedName, setSelectedName] = useState('Платеж');
   const handleNameChange = ({ target: { value } }) => {
     setSelectedName(value);
   };
@@ -75,6 +77,7 @@ const NewTransaction = () => {
 
   const handleClose = () => {
     setOpenDialog(false);
+    history.push('/history');
   };
 
   const Transition = React.forwardRef(function Transition(props, ref) {
@@ -82,6 +85,8 @@ const NewTransaction = () => {
   });
 
   const handleOnClick = () => {
+    console.log(sourceMap[selectedSourceUid]);
+
     api
       .addTransaction({
         userUid: '1',
@@ -136,9 +141,9 @@ const NewTransaction = () => {
       <FormControl className={classes.formControl}>
         <InputLabel id="currency">Валюта</InputLabel>
         <Select labelId="currency-label" id="currency-select" value={selectedCurrency} onChange={handleCurrencyChange}>
-          <MenuItem value="₽">₽</MenuItem>
-          <MenuItem value="$">$</MenuItem>
-          <MenuItem value="€">€</MenuItem>
+          <MenuItem value="RUB">₽</MenuItem>
+          <MenuItem value="USD">$</MenuItem>
+          <MenuItem value="EUR">€</MenuItem>
         </Select>
       </FormControl>
       <Divider />
