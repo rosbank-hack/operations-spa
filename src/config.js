@@ -1,3 +1,3 @@
 export default {
-  backendUrl: 'https://ros-hack-api.herokuapp.com/api/v1/operations',
+  backendUrl: 'https://ros-hack-api.herokuapp.com/api/v1',
 };

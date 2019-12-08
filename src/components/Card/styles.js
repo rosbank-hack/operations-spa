@@ -32,6 +32,7 @@ export default makeStyles({
     display: 'flex',
     flexDirection: 'column',
     justifySelf: 'flex-end',
+    textAlign: 'right',
   },
   card__title_main: {
     fontSize: '18px',

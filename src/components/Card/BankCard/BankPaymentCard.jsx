@@ -6,7 +6,7 @@ import TransactionDarkIcon from 'assets/icons/transaction-dark.svg';
 
 import useStyles from '../styles';
 
-const BankPaymentCard = ({ price, title }) => {
+const BankPaymentCard = ({ price, title, itemId }) => {
   const classes = useStyles();
   const history = useHistory();
 
@@ -15,8 +15,8 @@ const BankPaymentCard = ({ price, title }) => {
       className={classes.root}
       role="button"
       tabIndex="0"
-      onKeyPress={() => history.push('/details/1')}
-      onClick={() => history.push('/details/1')}
+      onKeyPress={() => history.push(`/details/${itemId || 1}`)}
+      onClick={() => history.push(`/details/${itemId || 1}`)}
     >
       <div className={classes.card__image}>
         <img src={TransactionDarkIcon} alt="icon" />

@@ -5,7 +5,7 @@ import BurgerKingLogo from 'assets/icons/Burger_King_Logo.svg';
 
 import useStyles from '../styles';
 
-const CommonCard = ({ typeError, reason }) => {
+const CommonCard = ({ typeError, reason, itemId }) => {
   const classes = useStyles();
   const history = useHistory();
 
@@ -15,8 +15,8 @@ const CommonCard = ({ typeError, reason }) => {
       alt="angle"
       role="button"
       tabIndex="0"
-      onKeyPress={() => history.push('/details/1')}
-      onClick={() => history.push('/details/1')}
+      onKeyPress={() => history.push(`/details/${itemId || 1}`)}
+      onClick={() => history.push(`/details/${itemId || 1}`)}
     >
       <div className={classes.card__image}>
         <img src={BurgerKingLogo} alt="icon" />

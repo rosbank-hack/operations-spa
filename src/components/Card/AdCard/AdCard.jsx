@@ -7,7 +7,7 @@ import { addDigitDivider } from 'utils/number-utils';
 
 import useStyles from '../styles';
 
-const AdCard = ({ price, cashback, company, category, addText, link }) => {
+const AdCard = ({ price, cashback, company, category, addText, link, itemId }) => {
   const classes = useStyles();
   const history = useHistory();
 
@@ -16,8 +16,8 @@ const AdCard = ({ price, cashback, company, category, addText, link }) => {
       className={classes.root_ad}
       role="button"
       tabIndex="0"
-      onKeyPress={() => history.push('/details/1')}
-      onClick={() => history.push('/details/1')}
+      onKeyPress={() => history.push(`/details/${itemId || 1}`)}
+      onClick={() => history.push(`/details/${itemId || 1}`)}
     >
       <div className={classes.card__main_service}>
         <div className={classes.card__image}>

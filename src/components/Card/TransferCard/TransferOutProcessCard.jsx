@@ -7,7 +7,7 @@ import ProcessIcon from 'assets/icons/passage-of-time.svg';
 
 import useStyles from '../styles';
 
-const TransferOutProcessCard = ({ amount, name, mcc, extra }) => {
+const TransferOutProcessCard = ({ amount, name, mcc, extra, itemId }) => {
   const classes = useStyles();
   const history = useHistory();
   const extraObj = extra && JSON.parse(extra);
@@ -19,8 +19,8 @@ const TransferOutProcessCard = ({ amount, name, mcc, extra }) => {
       className={classes.root}
       role="button"
       tabIndex="0"
-      onKeyPress={() => history.push('/details/1')}
-      onClick={() => history.push('/details/1')}
+      onKeyPress={() => history.push(`/details/${itemId || 1}`)}
+      onClick={() => history.push(`/details/${itemId || 1}`)}
     >
       <div className={classes.card__image}>
         <img src={iconLink || TransactionIcon} alt="icon" />

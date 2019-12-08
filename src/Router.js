@@ -6,6 +6,7 @@ import { History } from 'pages/History';
 import { Categories } from 'pages/Categories';
 import { NotFound } from 'pages/NotFound';
 import { MainLayout } from 'layouts/MainLayout';
+import { DetailsLayout } from 'layouts/DetailsLayout';
 import { Details } from 'pages/Details';
 
 const RootRouter = ({ history }) => (
@@ -30,9 +31,9 @@ const RootRouter = ({ history }) => (
       <Route
         path="/details/:id"
         component={() => (
-          <MainLayout>
+          <DetailsLayout>
             <Details />
-          </MainLayout>
+          </DetailsLayout>
         )}
       />
       <Route

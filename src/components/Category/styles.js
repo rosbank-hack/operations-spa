@@ -24,10 +24,17 @@ export default makeStyles({
     fontWeight: '800',
     color: '#414141',
     textAlign: 'right',
+    width: '100px',
   },
   category__amount: {
     display: 'flex',
     flexDirection: 'column',
     justifySelf: 'flex-end',
+  },
+  category__image: {
+    '& > img': {
+      width: '35px',
+      height: '35px',
+    },
   },
 });

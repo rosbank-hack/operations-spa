@@ -14,7 +14,7 @@ const cardStatuses = {
   PROCESS: 'В расмотрении',
 };
 
-const BankServiceCard = ({ title, substatus }) => {
+const BankServiceCard = ({ title, substatus, itemId }) => {
   const classes = useStyles();
   const history = useHistory();
 
@@ -36,8 +36,8 @@ const BankServiceCard = ({ title, substatus }) => {
       className={classes.root__service}
       role="button"
       tabIndex="0"
-      onKeyPress={() => history.push('/details/1')}
-      onClick={() => history.push('/details/1')}
+      onKeyPress={() => history.push(`/details/${itemId || 1}`)}
+      onClick={() => history.push(`/details/${itemId || 1}`)}
     >
       <div className={classes.card__main_service}>
         <div className={classes.card__image}>

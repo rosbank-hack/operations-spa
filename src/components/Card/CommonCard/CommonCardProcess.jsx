@@ -7,7 +7,7 @@ import ProcessIcon from 'assets/icons/passage-of-time.svg';
 
 import useStyles from '../styles';
 
-const CommonCard = ({ price, cashback }) => {
+const CommonCard = ({ price, cashback, itemId }) => {
   const classes = useStyles();
   const history = useHistory();
 
@@ -16,8 +16,8 @@ const CommonCard = ({ price, cashback }) => {
       className={classes.root}
       role="button"
       tabIndex="0"
-      onKeyPress={() => history.push('/details/1')}
-      onClick={() => history.push('/details/1')}
+      onKeyPress={() => history.push(`/details/${itemId || 1}`)}
+      onClick={() => history.push(`/details/${itemId || 1}`)}
     >
       <div className={classes.card__image}>
         <img src={BurgerKingLogo} alt="icon" />

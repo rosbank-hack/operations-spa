@@ -13,19 +13,23 @@ const CategoriesFeed = () => {
       categories: [
         {
           title: 'Транспорт',
-          amount: '4565',
+          amount: '15445',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1-D_8yvK7nswlx8nfy_oNqS2NBHnFu4q3&export=download',
         },
         {
           title: 'Продукты',
-          amount: '15445',
+          amount: '8700',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1UVKlkXpsXWHyaInvz2rzutEWpOf_-veS&export=download',
         },
         {
-          title: 'Лекарства',
-          amount: '5445',
+          title: 'Коммунальные платежи',
+          amount: '7445',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1Jytv6xVERIP_84BntyAg67FDrqxqCNby&export=download',
         },
         {
           title: 'Развлечения',
-          amount: '7445',
+          amount: '1634',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1nHK6SGLIsgreJgxWiQnljxC5xiXffulu&export=download',
         },
       ],
     },
@@ -34,19 +38,23 @@ const CategoriesFeed = () => {
       categories: [
         {
           title: 'Транспорт',
-          amount: '4565',
+          amount: '15445',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1-D_8yvK7nswlx8nfy_oNqS2NBHnFu4q3&export=download',
         },
         {
           title: 'Продукты',
-          amount: '15445',
+          amount: '8700',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1UVKlkXpsXWHyaInvz2rzutEWpOf_-veS&export=download',
         },
         {
-          title: 'Лекарства',
-          amount: '5445',
+          title: 'Коммунальные платежи',
+          amount: '7445',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1Jytv6xVERIP_84BntyAg67FDrqxqCNby&export=download',
         },
         {
           title: 'Развлечения',
-          amount: '7445',
+          amount: '1634',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1nHK6SGLIsgreJgxWiQnljxC5xiXffulu&export=download',
         },
       ],
     },
@@ -55,19 +63,23 @@ const CategoriesFeed = () => {
       categories: [
         {
           title: 'Транспорт',
-          amount: '4565',
+          amount: '15445',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1-D_8yvK7nswlx8nfy_oNqS2NBHnFu4q3&export=download',
         },
         {
           title: 'Продукты',
-          amount: '15445',
+          amount: '8700',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1UVKlkXpsXWHyaInvz2rzutEWpOf_-veS&export=download',
         },
         {
-          title: 'Лекарства',
-          amount: '5445',
+          title: 'Коммунальные платежи',
+          amount: '7445',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1Jytv6xVERIP_84BntyAg67FDrqxqCNby&export=download',
         },
         {
           title: 'Развлечения',
-          amount: '7445',
+          amount: '1634',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1nHK6SGLIsgreJgxWiQnljxC5xiXffulu&export=download',
         },
       ],
     },
@@ -76,19 +88,23 @@ const CategoriesFeed = () => {
       categories: [
         {
           title: 'Транспорт',
-          amount: '4565',
+          amount: '15445',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1-D_8yvK7nswlx8nfy_oNqS2NBHnFu4q3&export=download',
         },
         {
           title: 'Продукты',
-          amount: '15445',
+          amount: '8700',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1UVKlkXpsXWHyaInvz2rzutEWpOf_-veS&export=download',
         },
         {
-          title: 'Лекарства',
-          amount: '5445',
+          title: 'Коммунальные платежи',
+          amount: '7445',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1Jytv6xVERIP_84BntyAg67FDrqxqCNby&export=download',
         },
         {
           title: 'Развлечения',
-          amount: '7445',
+          amount: '1634',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1nHK6SGLIsgreJgxWiQnljxC5xiXffulu&export=download',
         },
       ],
     },
