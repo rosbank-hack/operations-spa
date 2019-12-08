@@ -12,13 +12,13 @@ const CategoriesFeed = () => {
       title: 'Декабрь',
       categories: [
         {
-          title: 'Транспорт',
-          amount: '15445',
-          icon: 'https://drive.google.com/uc?authuser=0&id=1-D_8yvK7nswlx8nfy_oNqS2NBHnFu4q3&export=download',
+          title: 'Развлечения',
+          amount: '16334',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1nHK6SGLIsgreJgxWiQnljxC5xiXffulu&export=download',
         },
         {
           title: 'Продукты',
-          amount: '8700',
+          amount: '14400',
           icon: 'https://drive.google.com/uc?authuser=0&id=1UVKlkXpsXWHyaInvz2rzutEWpOf_-veS&export=download',
         },
         {
@@ -27,9 +27,9 @@ const CategoriesFeed = () => {
           icon: 'https://drive.google.com/uc?authuser=0&id=1Jytv6xVERIP_84BntyAg67FDrqxqCNby&export=download',
         },
         {
-          title: 'Развлечения',
-          amount: '1634',
-          icon: 'https://drive.google.com/uc?authuser=0&id=1nHK6SGLIsgreJgxWiQnljxC5xiXffulu&export=download',
+          title: 'Транспорт',
+          amount: '1545',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1-D_8yvK7nswlx8nfy_oNqS2NBHnFu4q3&export=download',
         },
       ],
     },
@@ -37,24 +37,24 @@ const CategoriesFeed = () => {
       title: 'Ноябрь',
       categories: [
         {
+          title: 'Продукты',
+          amount: '87500',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1UVKlkXpsXWHyaInvz2rzutEWpOf_-veS&export=download',
+        },
+        {
           title: 'Транспорт',
-          amount: '15445',
+          amount: '22145',
           icon: 'https://drive.google.com/uc?authuser=0&id=1-D_8yvK7nswlx8nfy_oNqS2NBHnFu4q3&export=download',
         },
         {
-          title: 'Продукты',
-          amount: '8700',
-          icon: 'https://drive.google.com/uc?authuser=0&id=1UVKlkXpsXWHyaInvz2rzutEWpOf_-veS&export=download',
+          title: 'Развлечения',
+          amount: '13634',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1nHK6SGLIsgreJgxWiQnljxC5xiXffulu&export=download',
         },
         {
           title: 'Коммунальные платежи',
           amount: '7445',
           icon: 'https://drive.google.com/uc?authuser=0&id=1Jytv6xVERIP_84BntyAg67FDrqxqCNby&export=download',
-        },
-        {
-          title: 'Развлечения',
-          amount: '1634',
-          icon: 'https://drive.google.com/uc?authuser=0&id=1nHK6SGLIsgreJgxWiQnljxC5xiXffulu&export=download',
         },
       ],
     },
@@ -62,23 +62,23 @@ const CategoriesFeed = () => {
       title: 'Октябрь',
       categories: [
         {
+          title: 'Коммунальные платежи',
+          amount: '55500',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1Jytv6xVERIP_84BntyAg67FDrqxqCNby&export=download',
+        },
+        {
           title: 'Транспорт',
-          amount: '15445',
+          amount: '23435',
           icon: 'https://drive.google.com/uc?authuser=0&id=1-D_8yvK7nswlx8nfy_oNqS2NBHnFu4q3&export=download',
         },
         {
           title: 'Продукты',
-          amount: '8700',
+          amount: '8567',
           icon: 'https://drive.google.com/uc?authuser=0&id=1UVKlkXpsXWHyaInvz2rzutEWpOf_-veS&export=download',
         },
         {
-          title: 'Коммунальные платежи',
-          amount: '7445',
-          icon: 'https://drive.google.com/uc?authuser=0&id=1Jytv6xVERIP_84BntyAg67FDrqxqCNby&export=download',
-        },
-        {
           title: 'Развлечения',
-          amount: '1634',
+          amount: '1334',
           icon: 'https://drive.google.com/uc?authuser=0&id=1nHK6SGLIsgreJgxWiQnljxC5xiXffulu&export=download',
         },
       ],
@@ -87,23 +87,23 @@ const CategoriesFeed = () => {
       title: 'Сентябрь',
       categories: [
         {
+          title: 'Продукты',
+          amount: '87040',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1UVKlkXpsXWHyaInvz2rzutEWpOf_-veS&export=download',
+        },
+        {
+          title: 'Коммунальные платежи',
+          amount: '34235',
+          icon: 'https://drive.google.com/uc?authuser=0&id=1Jytv6xVERIP_84BntyAg67FDrqxqCNby&export=download',
+        },
+        {
           title: 'Транспорт',
           amount: '15445',
           icon: 'https://drive.google.com/uc?authuser=0&id=1-D_8yvK7nswlx8nfy_oNqS2NBHnFu4q3&export=download',
         },
         {
-          title: 'Продукты',
-          amount: '8700',
-          icon: 'https://drive.google.com/uc?authuser=0&id=1UVKlkXpsXWHyaInvz2rzutEWpOf_-veS&export=download',
-        },
-        {
-          title: 'Коммунальные платежи',
-          amount: '7445',
-          icon: 'https://drive.google.com/uc?authuser=0&id=1Jytv6xVERIP_84BntyAg67FDrqxqCNby&export=download',
-        },
-        {
           title: 'Развлечения',
-          amount: '1634',
+          amount: '2451',
           icon: 'https://drive.google.com/uc?authuser=0&id=1nHK6SGLIsgreJgxWiQnljxC5xiXffulu&export=download',
         },
       ],

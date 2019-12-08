@@ -12,7 +12,7 @@ const PieChartApp = () => {
         endAngle={30}
         data={data}
         cx={100}
-        cy={100}
+        cy={110}
         outerRadius={80}
         fill="#8884d8"
         label
