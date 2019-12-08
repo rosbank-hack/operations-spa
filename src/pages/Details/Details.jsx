@@ -40,7 +40,7 @@ const Details = () => {
 
   const getImage = () => {
     switch (card.extendedStatus) {
-      case 'SUCCESS':
+      case 'IN':
         return <img className={classes.details__header_big} src={SuccessIcon} alt="icon" />;
       case 'OUT_DECLINE':
         return <img className={classes.details__header_big} src={CancelIcon} alt="icon" />;
@@ -87,6 +87,11 @@ const Details = () => {
         </div>
       </div>
       <div className={classes.details__controls}>
+        {card.extendedStatus === 'OUT_PROCESSING' || card.extendedStatus === 'OUT_DECLINE' ? (
+          <Button variant="outlined" size="large" style={{ borderRadius: '26px' }}>
+            Повторить транзакцию
+          </Button>
+        ) : null}
         <Button variant="outlined" size="large" style={{ borderRadius: '26px' }}>
           Сохранить в шаблон
         </Button>
