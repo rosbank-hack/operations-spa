@@ -77,7 +77,7 @@ const BottomNavigation = () => {
               label: classes.actionLabel,
               root: classes.actionRoot,
             }}
-            label="События"
+            label="История"
             icon={<img src={NotepadIcon} alt="events" />}
           />
           <BottomNavigationAction
