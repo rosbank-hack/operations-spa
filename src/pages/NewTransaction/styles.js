@@ -3,16 +3,11 @@ import makeStyles from '@material-ui/core/styles/makeStyles';
 export default makeStyles(theme => ({
   formControl: {
     margin: theme.spacing(1),
-    minWidth: 120,
+    width: 250,
+    marginTop: '15px',
   },
-  selectEmpty: {
-    marginTop: theme.spacing(2),
-  },
-  root: {
-    padding: '0px 15px',
-    paddingBottom: '130px',
-  },
-  input: {
-    width: '20%',
+  container: {
+    width: '50%',
+    margin: 'auto',
   },
 }));
