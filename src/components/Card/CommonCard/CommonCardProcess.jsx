@@ -30,8 +30,8 @@ const CommonCard = ({ price, cashback }) => {
         <span className={classes.card__title_category}>Рестораны</span>
       </div>
       <div className={classes.card__payment}>
-        <span className={classes.card__payment_main}>{`- ${addDigitDivider(price)} р.`}</span>
-        <span className={classes.card__payment_cashback}>{`+ ${addDigitDivider(cashback)} р. кэшбек`}</span>
+        <span className={classes.card__payment_main}>{`-${addDigitDivider(price)} р.`}</span>
+        <span className={classes.card__payment_cashback}>{`+${addDigitDivider(cashback)} р. кэшбек`}</span>
       </div>
     </div>
   );

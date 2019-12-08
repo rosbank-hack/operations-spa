@@ -1,3 +1,3 @@
 export default {
-  backendUrl: 'qiwi.com',
+  backendUrl: 'https://ros-hack-api.herokuapp.com/api/v1/operations',
 };

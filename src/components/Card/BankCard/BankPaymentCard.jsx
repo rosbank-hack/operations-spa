@@ -26,7 +26,7 @@ const BankPaymentCard = ({ price, title }) => {
         <span className={classes.card__title_category}>Банковские операции</span>
       </div>
       <div className={classes.card__payment}>
-        <span className={classes.card__payment_main}>{`- ${addDigitDivider(price)} р.`}</span>
+        <span className={classes.card__payment_main}>{`-${addDigitDivider(price)} р.`}</span>
       </div>
     </div>
   );

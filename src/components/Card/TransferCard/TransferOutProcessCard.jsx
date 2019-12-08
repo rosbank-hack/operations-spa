@@ -7,9 +7,12 @@ import ProcessIcon from 'assets/icons/passage-of-time.svg';
 
 import useStyles from '../styles';
 
-const TransferOutProcessCard = ({ price }) => {
+const TransferOutProcessCard = ({ amount, name, mcc, extra }) => {
   const classes = useStyles();
   const history = useHistory();
+  const extraObj = extra && JSON.parse(extra);
+  const iconLink = extraObj && extraObj.PROVIDERS && extraObj.PROVIDERS.providerIcon;
+  const cashback = extraObj && extraObj.BONUSES && extraObj.BONUSES.cashback;
 
   return (
     <div
@@ -20,17 +23,20 @@ const TransferOutProcessCard = ({ price }) => {
       onClick={() => history.push('/details/1')}
     >
       <div className={classes.card__image}>
-        <img src={TransactionIcon} alt="icon" />
+        <img src={iconLink || TransactionIcon} alt="icon" />
       </div>
       <div className={classes.card__title}>
         <div className={classes.card__title_process}>
-          <span className={classes.card__title_main}>Иван Иванович К.</span>
+          <span className={classes.card__title_main}>{name}</span>
           <img src={ProcessIcon} alt="process" />
         </div>
-        <span className={classes.card__title_category}>Исходящий перевод</span>
+        <span className={classes.card__title_category}>{mcc || 'Исходящий платеж'}</span>
       </div>
       <div className={classes.card__payment}>
-        <span className={classes.card__payment_main}>{`- ${addDigitDivider(price)} р.`}</span>
+        <span className={classes.card__payment_main}>{`-${addDigitDivider(amount)} р.`}</span>
+        {cashback && (
+          <span className={classes.card__payment_cashback}>{`+${addDigitDivider(cashback)} р. кэшбек`}</span>
+        )}
       </div>
     </div>
   );

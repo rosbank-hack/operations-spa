@@ -28,8 +28,8 @@ const AdCard = ({ price, cashback, company, category, addText, link }) => {
           <span className={classes.card__title_category}>{category}</span>
         </div>
         <div className={classes.card__payment}>
-          <span className={classes.card__payment_main}>{`- ${addDigitDivider(price)} р.`}</span>
-          <span className={classes.card__payment_cashback}>{`+ ${addDigitDivider(cashback)} р. кэшбек`}</span>
+          <span className={classes.card__payment_main}>{`-${addDigitDivider(price)} р.`}</span>
+          <span className={classes.card__payment_cashback}>{`+${addDigitDivider(cashback)} р. кэшбек`}</span>
         </div>
       </div>
       <div className={classes.ad__main}>

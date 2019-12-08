@@ -43,19 +43,19 @@ export default makeStyles({
   },
   card__payment_main: {
     fontSize: '16px',
+    width: '80px',
     fontWeight: '800',
     color: '#414141',
-    textAlign: 'right',
   },
   card__payment_in: {
     fontSize: '16px',
+    width: '80px',
     fontWeight: '800',
     color: '#2ACF35',
   },
   card__payment_cashback: {
     fontSize: '12px',
     color: '#959595',
-    marginTop: '6px',
   },
   card__image_processing: {
     marginRight: '10px',
@@ -64,6 +64,12 @@ export default makeStyles({
     '& > img': {
       height: '15px',
       width: '15px',
+    },
+  },
+  card__image: {
+    '& > img': {
+      width: '30px',
+      heigth: '30px',
     },
   },
   card__error: {

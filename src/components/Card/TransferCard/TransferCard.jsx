@@ -5,15 +5,15 @@ import TransferOutSuccessCard from './TransferOutSuccessCard';
 import TransferOutProcessCard from './TransferOutProcessCard';
 import TransferOutErrorCard from './TransferOutErrorCard';
 
-const TransferCard = ({ status, ...other }) => {
-  switch (status) {
+const TransferCard = ({ extendedStatus, status, ...other }) => {
+  switch (extendedStatus) {
     case 'IN':
       return <TransferInCard {...other} />;
-    case 'OUT-SUCCESS':
+    case 'OUT':
       return <TransferOutSuccessCard {...other} />;
-    case 'OUT-PROCESS':
+    case 'OUT_PROCESSING':
       return <TransferOutProcessCard {...other} />;
-    case 'OUT-ERROR':
+    case 'OUT_DECLINE':
       return <TransferOutErrorCard {...other} />;
     default:
       return null;

@@ -1,11 +1,12 @@
 import React from 'react';
 import Divider from '@material-ui/core/Divider';
+import InfiniteScroll from 'react-infinite-scroller';
 
 import { CommonCard, TransferCard, BankCard, AdCard } from 'components/Card';
 
 import useStyles from './styles';
 
-const DailyPack = ({ pack: { title, cards } }) => {
+const DailyPack = ({ pack: { title, cards }, hasNextPage, loadNextPage }) => {
   const classes = useStyles();
 
   const getCards = () => {
@@ -48,7 +49,20 @@ const DailyPack = ({ pack: { title, cards } }) => {
   return (
     <div>
       <h2 className={classes.title}>{title}</h2>
-      <div className={classes.root}>{getCards()}</div>
+      <InfiniteScroll
+        pageStart={0}
+        loadMore={loadNextPage}
+        hasMore={hasNextPage}
+        useWindow
+        threshold={100}
+        loader={
+          <div className="loader" key={0}>
+            Loading ...
+          </div>
+        }
+      >
+        {getCards()}
+      </InfiniteScroll>
     </div>
   );
 };

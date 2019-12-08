@@ -6,7 +6,7 @@ import SearchIcon from '@material-ui/icons/Search';
 
 import useStyles from './styles';
 
-const SearchInput = ({ isDisabled, width }) => {
+const SearchInput = ({ isDisabled, width, onChange, value }) => {
   const classes = useStyles();
 
   return (
@@ -16,6 +16,8 @@ const SearchInput = ({ isDisabled, width }) => {
         placeholder="Поиск"
         inputProps={{ 'aria-label': 'search google maps' }}
         disabled={isDisabled}
+        onChange={onChange}
+        value={value}
       />
       <IconButton className={classes.iconButton} aria-label="search">
         <SearchIcon />

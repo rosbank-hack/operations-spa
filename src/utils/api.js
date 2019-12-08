@@ -29,6 +29,7 @@ export const makeRequest = ({ url, type = 'post', baseURL = config.backendUrl, i
 
 const api = {
   exampleRequest: makeRequest({ url: '/example-request', type: 'get' }),
+  search: makeRequest({ url: '/search' }),
 };
 
 export default api;
