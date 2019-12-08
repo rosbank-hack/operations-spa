@@ -6,7 +6,7 @@ import SearchIcon from '@material-ui/icons/Search';
 
 import useStyles from './styles';
 
-const SearchInput = ({ isDisabled, width, onChange, value }) => {
+const SearchInput = ({ isDisabled, width, onChange, value, isAutofocus }) => {
   const classes = useStyles();
 
   return (
@@ -18,6 +18,7 @@ const SearchInput = ({ isDisabled, width, onChange, value }) => {
         disabled={isDisabled}
         onChange={onChange}
         value={value}
+        autoFocus={isAutofocus}
       />
       <IconButton className={classes.iconButton} aria-label="search">
         <SearchIcon />
