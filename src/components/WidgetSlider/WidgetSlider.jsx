@@ -5,6 +5,7 @@ import SwipeableViews from 'react-swipeable-views';
 import { WarningSlide } from './WarningSlide';
 import { FinanceHealth } from './FinanceHealth';
 import { CreditNotification } from './CreditNotification';
+import { AnalyzeSlide } from './AnalyzeSlide';
 
 import useStyles from './styles';
 
@@ -33,6 +34,9 @@ const WidgetSlider = () => {
         </div>
         <div style={{ padding: '20px', marginRight: '20px' }}>
           <CreditNotification />
+        </div>
+        <div style={{ padding: '20px', marginRight: '20px' }}>
+          <AnalyzeSlide />
         </div>
       </SwipeableViews>
     </div>

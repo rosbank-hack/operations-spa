@@ -22,8 +22,10 @@ const BottomDrawer = ({ setOpen }) => {
   ]);
 
   useEffect(() => {
+    const validValue = valueInput.charAt(0).toUpperCase() + valueInput.slice(1);
+
     api
-      .search({ userId: 1, dateFrom: new Date(), category: valueInput })
+      .search({ userId: 1, dateFrom: new Date(), category: validValue })
       .then(res => {
         setNewCards([{ title: '', cards: res }]);
       })

@@ -33,7 +33,7 @@ export default makeStyles({
     marginLeft: '35px',
     '& > button': {
       borderRadius: '26px',
-      fontSize: '10px',
+      fontSize: '9px',
       marginLeft: '12px',
     },
   },
